@@ -248,6 +248,10 @@ atomic_tests:
       Set-MpPreference -DisableBehaviorMonitoring 1
       Set-MpPreference -DisableScriptScanning 1
       Set-MpPreference -DisableBlockAtFirstSeen 1
+      Set-MpPreference -DisableRealtimeMonitoring $true
+      Set-MpPreference -DisableBehaviorMonitoring $true
+      Set-MpPreference -DisableScriptScanning $true
+      Set-MpPreference -DisableBlockAtFirstSeen $true
     cleanup_command: |
       Set-MpPreference -DisableRealtimeMonitoring 0
       Set-MpPreference -DisableBehaviorMonitoring 0
