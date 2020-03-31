@@ -5,7 +5,10 @@ display_name: Standard Application Layer Protocol
 atomic_tests:
 - name: Malicious User Agents - Powershell
   description: |
-    This test simulates an infected host beaconing to command and control.
+    This test simulates an infected host beaconing to command and control. If an error that starts with "The response content cannot be parsed because the Internet Explorer engine is not available"
+    appears, launch internet explorere and accept the recommended settings and run this test again. This only needs to be done once. No output will be displayed
+    when executed, but the requests could be viewed/investigated in Wireshark or a similiar application.
+
     Inspired by APTSimulator - https://github.com/NextronSystems/APTSimulator/blob/master/test-sets/command-and-control/malicious-user-agents.bat
 
   supported_platforms:
@@ -26,7 +29,8 @@ atomic_tests:
 
 - name: Malicious User Agents - CMD
   description: |
-    This test simulates an infected host beaconing to command and control.
+    This test simulates an infected host beaconing to command and control. Upon execution, the raw website code will be displayed in the powershell session.
+
     Inspired by APTSimulator - https://github.com/NextronSystems/APTSimulator/blob/master/test-sets/command-and-control/malicious-user-agents.bat
 
   supported_platforms:
@@ -106,7 +110,7 @@ atomic_tests:
     domain:
       description: Default domain to simulate against
       type: string
-      default: 127.0.0.1.xip.io
+      default: 8.8.8.8
     subdomain:
       description: Subdomain prepended to the domain name
       type: string
