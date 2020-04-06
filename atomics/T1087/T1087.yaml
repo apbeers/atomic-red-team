@@ -107,8 +107,7 @@ atomic_tests:
 
 - name: Enumerate all accounts
   description: |
-    Enumerate all accounts
-    Upon exection, multiple enumeration commands will be run and their output displayed in the PowerShell session
+    Enumerate all accounts. Upon exection, multiple enumeration commands will be run and their output displayed.
   supported_platforms:
     - windows
   executor:
@@ -124,7 +123,7 @@ atomic_tests:
 
 - name: Enumerate all accounts via PowerShell
   description: |
-    Enumerate all accounts via PowerShell
+    Enumerate all accounts via PowerShell. Upon exection, multiple enumeration commands will be run and their output displayed.
   supported_platforms:
     - windows
   executor:
@@ -145,7 +144,7 @@ atomic_tests:
 
 - name: Enumerate logged on users
   description: |
-    Enumerate logged on users
+    Enumerate logged on users. Upon exection, user information will be displayed.
   supported_platforms:
     - windows
   executor:
@@ -156,7 +155,7 @@ atomic_tests:
 
 - name: Enumerate logged on users via PowerShell
   description: |
-    Enumerate logged on users via PowerShell
+    Enumerate logged on users via PowerShell. Upon exection, user information will be displayed.
   supported_platforms:
     - windows
   executor:

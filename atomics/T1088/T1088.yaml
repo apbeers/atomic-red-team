@@ -5,8 +5,10 @@ display_name: Bypass User Account Control
 atomic_tests:
 - name: Bypass UAC using Event Viewer (cmd)
   description: |
-    Bypasses User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
-    Upon execution command prompt should be launched with administrative privelages
+    Bypasses User Account Control using Event Viewer and a relevant Windows Registry modification.
+    Upon execution command prompt should be launched with administrative privelages.
+
+    More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
   supported_platforms:
     - windows
   input_arguments:
@@ -25,8 +27,10 @@ atomic_tests:
 
 - name: Bypass UAC using Event Viewer (PowerShell)
   description: |
-    PowerShell code to bypass User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
-    Upon execution command prompt should be launched with administrative privelages
+    PowerShell code to bypass User Account Control using Event Viewer and a relevant Windows Registry modification.
+    Upon execution command prompt should be launched with administrative privelages.
+
+    More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
   supported_platforms:
     - windows
   input_arguments:
@@ -47,6 +51,7 @@ atomic_tests:
 - name: Bypass UAC using Fodhelper
   description: |
     Bypasses User Account Control using the Windows 10 Features on Demand Helper (fodhelper.exe). Requires Windows 10.
+    Upon execution, "The operation completed successfully." will be displayed and cmd.exe will be opened.
 
   supported_platforms:
     - windows
@@ -70,6 +75,7 @@ atomic_tests:
 - name: Bypass UAC using Fodhelper - PowerShell
   description: |
     PowerShell code to bypass User Account Control using the Windows 10 Features on Demand Helper (fodhelper.exe). Requires Windows 10.
+    Upon execution, new registry entry info will be displayed and cmd.exe will be opened.
 
   supported_platforms:
     - windows
@@ -93,8 +99,8 @@ atomic_tests:
 
 - name: Bypass UAC using ComputerDefaults (PowerShell)
   description: |
-    PowerShell code to bypass User Account Control using ComputerDefaults.exe on Windows 10
-    Upon execution administrative command prompt should open
+    PowerShell code to bypass User Account Control using ComputerDefaults.exe on Windows 10.
+    Upon execution administrative command prompt should open.
   supported_platforms:
     - windows
   input_arguments:
@@ -116,8 +122,8 @@ atomic_tests:
 
 - name: Bypass UAC by Mocking Trusted Directories
   description: |
-    Creates a fake "trusted directory" and copies a binary to bypass UAC. The UAC bypass may not work on fully patched systems
-    Upon execution the directory structure should exist if the system is patched, if unpatched Microsoft Management Console should launch
+    Creates a fake "trusted directory" and copies a binary to bypass UAC. The UAC bypass may not work on fully patched systems.
+    Upon execution the directory structure should exist if the system is patched, if unpatched Microsoft Management Console should launch.
   supported_platforms:
     - windows
   input_arguments:
